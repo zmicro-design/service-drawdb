@@ -1,0 +1,13 @@
+services:
+  drawdb:
+    restart: always
+    image: whatwewant/drawdb:${SERVICE_DRAWDB_IMAGE_VERSION}
+    environment:
+      PORT: $SERVICE_DRAWDB_PORT
+      USERNAME: ${SERVICE_DRAWDB_USERNAME}
+      PASSWORD: ${SERVICE_DRAWDB_PASSWORD}
+      
+networks:
+  default:
+    external: true
+    name: compose-ingress
