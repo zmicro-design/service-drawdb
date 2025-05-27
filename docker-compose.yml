@@ -1,7 +1,7 @@
 services:
   drawdb:
     restart: always
-    image: whatwewant/drawdb:${SERVICE_DRAWDB_IMAGE_VERSION}
+    image: ${SERVICE_IMAGE_REGISTRY}/whatwewant/drawdb:${SERVICE_DRAWDB_IMAGE_VERSION}
     # ports:
     #   - 0.0.0.0:${SERVICE_DRAWDB_PORT}:8080
       
